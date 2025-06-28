@@ -1,13 +1,3 @@
-"use client";
-
-import {
-  Home,
-  FileText,
-  Puzzle,
-  Settings,
-  ScrollText,
-  LogOut,
-} from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -20,6 +10,14 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "@/components/ui/sidebar";
+import {
+  Home,
+  FileText,
+  Puzzle,
+  Settings,
+  LogOut,
+  Layers2,
+} from "lucide-react";
 
 // Navigation items
 const navItems = [
@@ -43,13 +41,13 @@ const navItems = [
 export function AppSidebar() {
   return (
     <Sidebar className="bg-[hsl(var(--sidebar-background))]">
-      <SidebarHeader className="border-b border-sidebar-border bg-[hsl(var(--sidebar-background))]">
-        <div className="flex items-center gap-2 px-4 py-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-            <ScrollText className="h-4 w-4" />
+      <SidebarHeader>
+        <div className="flex items-center gap-2 px-2 py-2">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500 text-sidebar-primary-foreground">
+            <Layers2 className="h-4 w-4" />
           </div>
           <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-semibold">PaperBase</span>
+            <span className="truncate font-semibold">PaperBase OCR</span>
           </div>
         </div>
       </SidebarHeader>
